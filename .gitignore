@@ -1,0 +1,17 @@
+node_modules
+dist
+.DS_Store
+*.local
+.cursor
+.env
+scripts/
+
+
+# OpenMemory - IDE/Assistant specific rules
+.cursor/rules/openmemory.mdc
+
+# Local architecture diagram
+architecture.md
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat

@@ -1,0 +1,27 @@
+{
+  "name": "nutriplan",
+  "version": "1.0.0",
+  "description": "\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u043f\u0438\u0442\u0430\u043d\u0438\u044f: \u0440\u0435\u0446\u0435\u043f\u0442\u044b, \u043f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u0449\u0438\u043a \u043d\u0435\u0434\u0435\u043b\u0438 \u0438 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0441\u043f\u0438\u0441\u043e\u043a \u0437\u0430\u043a\u0443\u043f\u043a\u0438",
+  "private": true,
+  "scripts": {
+    "dev": "node api.js && vite",
+    "build": "node api.js && vite build",
+    "preview": "vite preview",
+    "nutrition:normalize-units": "node scripts/normalize-recipe-units.mjs",
+    "nutrition:fetch": "node scripts/fetch-usda-nutrition.mjs",
+    "nutrition:recalc": "node scripts/recalculate-recipe-nutrition.mjs"
+  },
+  "dependencies": {
+    "firebase": "^12.18.0",
+    "i18next": "^26.2.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^17.0.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  }
+}
